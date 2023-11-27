@@ -12,6 +12,7 @@ spec:
       labels:
         app: paymentservice
     spec:
+      replicas: ${replicas}
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
       securityContext:
